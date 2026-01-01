@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Auth UI</title>
+</head>
+<body>
+    <div class="container-botao">
+        <button id="clickme">Entrar</button>
+    </div>
+
+    <div class="container-login-cadastro none">
+        <div class="login none">
+            <form action="/dados-de-login" method="post">
+                <label for="user/email">Digite o nome de usuário ou email:</label>
+                <input type="text, email" id="user/email">
+                <label for="passl">Digite a senha:</label>
+                <input type="password" id="passl">
+                <button type="submit">Fazer login</button>
+            </form>
+            <div class="para-cadastro">
+                <p>Ainda não tem uma conta? <button class="link">Clique aqui</button> e registre-se!</p>
+            </div>
+        </div>
+        
+        <div class="cadastro none">
+            <form action="/cadastro" method="post">
+                <label for="name">Digite seu nome completo:</label>
+                <input type="text" id="name"> <!-- Aqui pode ter um value="Aqui" que será um texto pré definido para o input!-->
+                <label for="email">Digite seu melhor email:</label>
+                <input type="email" id="email">
+                <label for="passc">Crie uma senha forte:</label>
+                <input type="password" id="passc">
+                <label for="passcc">Confirme sua senha super forte:</label>
+                <input type="password" id="passcc">
+                <button type="submit" id="cadastrar">Criar conta</button>
+            </form>
+            <div class="para-login">
+                <p>Já tem uma conta? <button class="link">Clique aqui</button> e faça login!</p>
+            </div>
+        </div>
+    </div>
+    <p id="situacao-da-senha" class="none">Senhas diferentes</p>
+
+    <p class="copy">&copy; 2026 <a href="https://www.instagram.com/wenderson.rh/" class="link perfil" target="_blank">@wenderson.rh</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
