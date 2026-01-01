@@ -36,7 +36,7 @@ const inputSenhaDois = document.getElementById("passcc");
 const situacaoSenha = document.getElementById("situacao-da-senha");
 let senha = false
 
-// funcao de verificação de senhas
+// funcao de verificação de senhas | parte 4
 function VerificarSenhas() {
     const senhaUm = inputSenhaUm.value;
     const senhaDois = inputSenhaDois.value;
@@ -80,3 +80,4 @@ if (senha === true){
         window.location.href = "cadastro.html";
     })
 }
+
